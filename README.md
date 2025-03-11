@@ -1,6 +1,8 @@
-# Practica4_Marc: SISTEMAS OPERATIVOS EN TIEMPO REAL
+# PR4-Marc
 
-CÓDIGO EJERCICIO PRÁCTICO 1
+## PRÁCTICA 4: SISTEMAS OPERATIVOS EN TIEMPO REAL
+
+### CÓDIGO EJERCICIO PRÁCTICO 1
 ``` cpp
 void setup()
 {
@@ -36,7 +38,7 @@ this will never happen because this is infinity loop */
 vTaskDelete( NULL );
 }
 ```
-FUNCIONAMIENTO
+### FUNCIONAMIENTO
 
 Utilizando la función `xTaskCreate()`, se crea una tarea, como su nombre indica.
 La función `AnotherTask()` es la tarea creada en la función `setup()`, en la cual se imprime repetidamente el mensaje `"this is another task"`.
@@ -45,7 +47,7 @@ En el bucle principal `loop()`, se imprime repetidamente el mensaje `"this is ES
 
 Finalmente, se llama a `vTaskDelete(NULL)` para eliminar la tarea. Sin embargo, esta llamada nunca se ejecutará debido al bucle infinito dentro de `AnotherTask()`, por lo que la tarea creada seguirá ejecutándose indefinidamente.
 
-### Salida por el puerto serie  
+Salida por el puerto serie  
 
 Al ejecutar el programa, vemos:
 
