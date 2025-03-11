@@ -36,7 +36,7 @@ this will never happen because this is infinity loop */
 vTaskDelete( NULL );
 }
 ```
-###FUNCIONAMIENTO
+FUNCIONAMIENTO
 
 Utilizando la función `xTaskCreate()`, se crea una tarea, como su nombre indica. La función `AnotherTask()` es la tarea creada en la función `setup()`, en la cual se imprime repetidamente el mensaje `"this is another task"`.
 
@@ -47,7 +47,9 @@ Finalmente, se llama a `vTaskDelete(NULL)` para eliminar la tarea. Sin embargo, 
 ### Salida por el puerto serie  
 
 Al ejecutar el programa, vemos:
+
 ```this is ESP32 Task - (espera 1 segundo) - this is another Task - (espera 1 segundo) - this is ESP32 Task - (espera 1 segundo) - etc. ```
 
 Después de las soluciones: 
+
 ```this is ESP32 Task -  this is another Task - (espera 1 segundo) - this is ESP32 Task -  this is another Task - (espera 1 segundo) - etc. ```
