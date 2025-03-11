@@ -38,7 +38,8 @@ vTaskDelete( NULL );
 ```
 FUNCIONAMIENTO
 
-Utilizando la función `xTaskCreate()`, se crea una tarea, como su nombre indica. La función `AnotherTask()` es la tarea creada en la función `setup()`, en la cual se imprime repetidamente el mensaje `"this is another task"`.
+Utilizando la función `xTaskCreate()`, se crea una tarea, como su nombre indica.
+La función `AnotherTask()` es la tarea creada en la función `setup()`, en la cual se imprime repetidamente el mensaje `"this is another task"`.
 
 En el bucle principal `loop()`, se imprime repetidamente el mensaje `"this is ESP32 Task"`.
 
