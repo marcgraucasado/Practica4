@@ -1,7 +1,7 @@
 # Practica4_Marc: SISTEMAS OPERATIVOS EN TIEMPO REAL
 
-##CÓDIGO EJERCICIO PRÁCTICO 1
-```
+CÓDIGO EJERCICIO PRÁCTICO 1
+``` cpp
 void setup()
 {
 Serial.begin(112500);
