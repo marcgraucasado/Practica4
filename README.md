@@ -38,7 +38,7 @@ this will never happen because this is infinity loop */
 vTaskDelete( NULL );
 }
 ```
-### FUNCIONAMIENTO
+### Descripción y funcionamiento:
 
 Utilizando la función `xTaskCreate()`, se crea una tarea, como su nombre indica.
 La función `AnotherTask()` es la tarea creada en la función `setup()`, en la cual se imprime repetidamente el mensaje `"this is another task"`.
